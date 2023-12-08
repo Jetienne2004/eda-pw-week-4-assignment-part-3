@@ -8,15 +8,20 @@ function addItem(item) {
   console.log(`item added,: ${item}`);
   return true;
 }
+console.log(addItem("kale"));
+console.log(addItem("chocolate"));
+
 function listItems() {
   for (let i = 0; i < basket.length; i++) {
     console.log(basket[i]);
   }
 }
+listItems(basket);
 function empty() {
   basket.length = 0;
   console.log(`your basket has been emptied.`);
 }
+empty(basket);
 // DO NOT MODIFY
 // Used for automated testing
 try {
